@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bpbbhdu8hbbeo"]
+
+[ext_resource type="PackedScene" uid="uid://b46tnpoxa7j4h" path="res://assets/kenney_car-kit/Models/GLB format/truck-flat.glb" id="1_1nnvc"]
+[ext_resource type="Script" uid="uid://wx0w7a80ky2" path="res://scenes/vehicle.gd" id="1_d0fkt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ebkm2"]
+size = Vector3(1.66, 1.396, 2.75)
+
+[node name="Vehicle" type="VehicleBody3D" unique_id=252588049]
+script = ExtResource("1_d0fkt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1014411204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002380371, 0.69781494, -0.022)
+shape = SubResource("BoxShape3D_ebkm2")
+
+[node name="truck-flat" parent="." unique_id=2073471927 instance=ExtResource("1_1nnvc")]
+
+[node name="Wheel - FR" type="VehicleWheel3D" parent="." unique_id=1168725962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5870847, 0.29782426, 0.78615916)
+use_as_traction = true
+use_as_steering = true
+
+[node name="Wheel - FL" type="VehicleWheel3D" parent="." unique_id=1312239527]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5211085, 0.2983579, 0.78567684)
+use_as_traction = true
+use_as_steering = true
+
+[node name="Wheel - BL" type="VehicleWheel3D" parent="." unique_id=2017819656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5834454, 0.3166604, -0.66272724)
+use_as_traction = true
+
+[node name="Wheel - BR" type="VehicleWheel3D" parent="." unique_id=447636182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5875087, 0.24140036, -0.66319585)
+use_as_traction = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=857787091]
+transform = Transform3D(-0.81915206, 0.4055798, -0.40557978, 0, 0.70710677, 0.7071068, 0.57357645, 0.579228, -0.5792279, -6, 9, -6)

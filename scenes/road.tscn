@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c7rbgbknjd26j"]
+
+[ext_resource type="PackedScene" uid="uid://kwxf3qlytarx" path="res://assets/kenney_city-kit-roads/Models/GLB format/road-straight.glb" id="1_mv8x7"]
+
+[node name="Road" type="Node3D" unique_id=1475849947]
+
+[node name="road-straight2" parent="." unique_id=1782942107 instance=ExtResource("1_mv8x7")]
+transform = Transform3D(-2.6226832e-07, 0, 6, 0, 6, 0, -6, 0, -2.6226832e-07, 0, 0, 0)

@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dpx6ykcmq88uc"]
+
+[ext_resource type="PackedScene" uid="uid://c7rbgbknjd26j" path="res://scenes/road.tscn" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://crda6t4tsj1tc" path="res://scenes/city.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bpbbhdu8hbbeo" path="res://scenes/vehicle.tscn" id="3_lquwl"]
+
+[sub_resource type="Environment" id="Environment_c5efw"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_3ukpr"]
+
+[node name="Main" type="Node3D" unique_id=2035552375]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=184233020]
+environment = SubResource("Environment_c5efw")
+
+[node name="Vehicle" parent="." unique_id=1554288108 instance=ExtResource("3_lquwl")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="City - Left" parent="." unique_id=386905271 instance=ExtResource("2_1bvp3")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8, 0, 0)
+
+[node name="City - Right" parent="." unique_id=627773161 instance=ExtResource("2_1bvp3")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8, 0, 0)
+visible = false
+
+[node name="Street" type="Node3D" parent="." unique_id=612890574]
+
+[node name="Road - Forward" parent="Street" unique_id=1475849947 instance=ExtResource("1_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Road - Center" parent="Street" unique_id=788107998 instance=ExtResource("1_h2yge")]
+
+[node name="Road - Backward" parent="Street" unique_id=1736693932 instance=ExtResource("1_h2yge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=1322119122]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=805860508]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_3ukpr")

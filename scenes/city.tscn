@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://crda6t4tsj1tc"]
+
+[ext_resource type="PackedScene" uid="uid://dldp8v7kp1chq" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-a.glb" id="1_rqxma"]
+[ext_resource type="PackedScene" uid="uid://d10yyps4rvcf" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-skyscraper-a.glb" id="2_movw8"]
+[ext_resource type="PackedScene" uid="uid://digc1kpvfvvbd" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-b.glb" id="3_oacpt"]
+
+[node name="City" type="Node3D" unique_id=386905271]
+
+[node name="building-a2" parent="." unique_id=307252768 instance=ExtResource("1_rqxma")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 8, 0, 0)
+
+[node name="building-skyscraper-a2" parent="." unique_id=1804158944 instance=ExtResource("2_movw8")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="building-b2" parent="." unique_id=1108558291 instance=ExtResource("3_oacpt")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, -8, 0, 0)
