@@ -13,8 +13,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	print(engine_force)
-	
 	# first handle steering
 	if Input.is_action_pressed(&"turn_left"):
 		on_turn_left(delta)
