@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://bfs3lbj1apdha"]
+
+[ext_resource type="Script" uid="uid://5d1puavso8le" path="res://scripts/building.gd" id="1_gq31q"]
+[ext_resource type="PackedScene" uid="uid://dldp8v7kp1chq" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-a.glb" id="2_w07ya"]
+[ext_resource type="PackedScene" uid="uid://digc1kpvfvvbd" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-b.glb" id="3_pw5b4"]
+[ext_resource type="PackedScene" uid="uid://lhqodl33wr0t" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-c.glb" id="4_66x6n"]
+[ext_resource type="PackedScene" uid="uid://dffktmr7g7q3m" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-d.glb" id="5_qailr"]
+[ext_resource type="PackedScene" uid="uid://bbceyseuevaqw" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-e.glb" id="6_u0sya"]
+[ext_resource type="PackedScene" uid="uid://daomf6av8a5ly" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-f.glb" id="7_pwcpb"]
+[ext_resource type="PackedScene" uid="uid://bdeb4w15bbg82" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-g.glb" id="8_8r5h2"]
+[ext_resource type="PackedScene" uid="uid://bkpqs4dyfser2" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-h.glb" id="9_sd3co"]
+[ext_resource type="PackedScene" uid="uid://i7vq2gys1j2j" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-i.glb" id="10_xy3kb"]
+[ext_resource type="PackedScene" uid="uid://brwytd4ouwfuj" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-j.glb" id="11_5xicg"]
+[ext_resource type="PackedScene" uid="uid://dnuscm5s8yxvd" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-k.glb" id="12_12ffk"]
+[ext_resource type="PackedScene" uid="uid://0ojtjxo51s3q" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-l.glb" id="13_vlwjt"]
+[ext_resource type="PackedScene" uid="uid://bhqa34g5gop7d" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-m.glb" id="14_vlm17"]
+
+[node name="Building" type="Node3D" unique_id=2013683958]
+script = ExtResource("1_gq31q")
+
+[node name="building-a" parent="." unique_id=307252768 instance=ExtResource("2_w07ya")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+
+[node name="building-b" parent="." unique_id=1108558291 instance=ExtResource("3_pw5b4")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+visible = false
+
+[node name="building-c" parent="." unique_id=1411799357 instance=ExtResource("4_66x6n")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0.5)
+visible = false
+
+[node name="building-d" parent="." unique_id=499371582 instance=ExtResource("5_qailr")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+visible = false
+
+[node name="building-e" parent="." unique_id=79668531 instance=ExtResource("6_u0sya")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+visible = false
+
+[node name="building-f" parent="." unique_id=1484561282 instance=ExtResource("7_pwcpb")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false
+
+[node name="building-g" parent="." unique_id=766155373 instance=ExtResource("8_8r5h2")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+visible = false
+
+[node name="building-h" parent="." unique_id=421907922 instance=ExtResource("9_sd3co")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+visible = false
+
+[node name="building-i" parent="." unique_id=937091849 instance=ExtResource("10_xy3kb")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false
+
+[node name="building-j" parent="." unique_id=1200247476 instance=ExtResource("11_5xicg")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false
+
+[node name="building-k" parent="." unique_id=1535679399 instance=ExtResource("12_12ffk")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+visible = false
+
+[node name="building-l" parent="." unique_id=1869632459 instance=ExtResource("13_vlwjt")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false
+
+[node name="building-m" parent="." unique_id=973741467 instance=ExtResource("14_vlm17")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false

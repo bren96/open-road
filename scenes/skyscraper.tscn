@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://je7h06jeu4uh"]
+
+[ext_resource type="Script" uid="uid://7ljttn3f3yow" path="res://scripts/skyscraper.gd" id="1_5pluy"]
+[ext_resource type="PackedScene" uid="uid://d10yyps4rvcf" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-skyscraper-a.glb" id="1_bqele"]
+[ext_resource type="PackedScene" uid="uid://1boe0ffjpb4b" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-skyscraper-b.glb" id="2_5pluy"]
+[ext_resource type="PackedScene" uid="uid://bemqdxw6cbltg" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-skyscraper-c.glb" id="3_b55vv"]
+[ext_resource type="PackedScene" uid="uid://dplx25rihyulw" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-skyscraper-d.glb" id="4_q6ale"]
+[ext_resource type="PackedScene" uid="uid://bab2bbw8qlhh7" path="res://assets/kenney_city-kit-commercial_2.1/Models/GLB format/building-skyscraper-e.glb" id="5_i2scu"]
+
+[node name="Skyscraper" type="Node3D" unique_id=1037684450]
+script = ExtResource("1_5pluy")
+
+[node name="building-skyscraper-a" parent="." unique_id=1804158944 instance=ExtResource("1_bqele")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+
+[node name="building-skyscraper-b" parent="." unique_id=782371980 instance=ExtResource("2_5pluy")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false
+
+[node name="building-skyscraper-c" parent="." unique_id=1573202307 instance=ExtResource("3_b55vv")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false
+
+[node name="building-skyscraper-d" parent="." unique_id=239902374 instance=ExtResource("4_q6ale")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false
+
+[node name="building-skyscraper-e" parent="." unique_id=42565641 instance=ExtResource("5_i2scu")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 1)
+visible = false
